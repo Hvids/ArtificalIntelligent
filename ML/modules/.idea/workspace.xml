@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="beb7b4a8-9722-40a8-b29d-28a1355fec9c" name="Default Changelist" comment="" />
+    <list default="true" id="beb7b4a8-9722-40a8-b29d-28a1355fec9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/tags.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1ZuTGhGCgQOtMFn577jF5f3Fdje" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,9 +31,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.correlation_degitization">
+  <component name="RunManager" selected="Python.pca">
     <configuration name="centrifugal_digitization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="modules" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -38,27 +48,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/centrifugal_digitization.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="conformity_digitization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="modules" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conformity_digitization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,13 +119,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pca" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="modules" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pca.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pca" />
         <item itemvalue="Python.correlation_degitization" />
         <item itemvalue="Python.loader" />
         <item itemvalue="Python.centrifugal_digitization" />
         <item itemvalue="Python.double_digitization" />
-        <item itemvalue="Python.conformity_digitization" />
       </list>
     </recent_temporary>
   </component>
@@ -154,42 +164,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="417" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586247382166">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="417" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.732@0.0.1366.732" timestamp="1586247382166" />
     <state width="800" height="478" key="DebuggerActiveHint" timestamp="1585696015001">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="800" height="478" key="DebuggerActiveHint/0.0.1366.732@0.0.1366.732" timestamp="1585696015001" />
-    <state width="1343" height="172" key="GridCell.Tab.0.bottom" timestamp="1585787127071">
+    <state width="1343" height="122" key="GridCell.Tab.0.bottom" timestamp="1586247296977">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1585787127071" />
-    <state width="1343" height="172" key="GridCell.Tab.0.center" timestamp="1585787127069">
+    <state width="1343" height="122" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1586247296977" />
+    <state width="1343" height="122" key="GridCell.Tab.0.center" timestamp="1586247296976">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1585787127069" />
-    <state width="1343" height="172" key="GridCell.Tab.0.left" timestamp="1585787126939">
+    <state width="1343" height="122" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1586247296976" />
+    <state width="1343" height="122" key="GridCell.Tab.0.left" timestamp="1586247296976">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1585787126939" />
-    <state width="1343" height="172" key="GridCell.Tab.0.right" timestamp="1585787127070">
+    <state width="1343" height="122" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1586247296976" />
+    <state width="1343" height="122" key="GridCell.Tab.0.right" timestamp="1586247296976">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1585787127070" />
-    <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1585716396157">
+    <state width="1343" height="122" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1586247296976" />
+    <state width="656" height="215" key="GridCell.Tab.1.bottom" timestamp="1586229030707">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.1.bottom/0.0.1366.732@0.0.1366.732" timestamp="1585716396157" />
-    <state width="1343" height="215" key="GridCell.Tab.1.center" timestamp="1585716396156">
+    <state width="656" height="215" key="GridCell.Tab.1.bottom/0.0.1366.732@0.0.1366.732" timestamp="1586229030707" />
+    <state width="656" height="215" key="GridCell.Tab.1.center" timestamp="1586229030706">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.1.center/0.0.1366.732@0.0.1366.732" timestamp="1585716396156" />
-    <state width="1343" height="215" key="GridCell.Tab.1.left" timestamp="1585716396156">
+    <state width="656" height="215" key="GridCell.Tab.1.center/0.0.1366.732@0.0.1366.732" timestamp="1586229030706" />
+    <state width="656" height="215" key="GridCell.Tab.1.left" timestamp="1586229030706">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.1.left/0.0.1366.732@0.0.1366.732" timestamp="1585716396156" />
-    <state width="1343" height="215" key="GridCell.Tab.1.right" timestamp="1585716396157">
+    <state width="656" height="215" key="GridCell.Tab.1.left/0.0.1366.732@0.0.1366.732" timestamp="1586229030706" />
+    <state width="656" height="215" key="GridCell.Tab.1.right" timestamp="1586229030707">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.1.right/0.0.1366.732@0.0.1366.732" timestamp="1585716396157" />
+    <state width="656" height="215" key="GridCell.Tab.1.right/0.0.1366.732@0.0.1366.732" timestamp="1586229030707" />
+    <state x="362" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1586226444371">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="362" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1586226444371" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -9,6 +9,7 @@ class Tags:
 
     def make(self, T, D_sqrt_,multidimentionality = False):
         eig, vec = np.linalg.eig(T)
+        vec= vec.T
         if multidimentionality:
             C = []
             k = 0
@@ -33,6 +34,7 @@ class Tags:
 
     def make_with_z(self, T, D_inv, Y,multidimentionality = False):
         eig, vec = np.linalg.eig(T)
+        vec = vec.T
         n = Y.shape[0]
         if multidimentionality:
             C = []
