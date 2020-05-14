@@ -20,43 +20,11 @@ class KNNClassificator:
         self.x_index = np.arange(0, X.shape[0])
     def predict(self,X_predict):
         if len(X_predict.shape)==1:
-            return self.__pridict_one(X_predict)
+            return self.__predict_one(X_predict)
         y_predicts = []
-        for x_preict in X_predict:
-            return self.__predict_many(X_predict)
+        for x_predict in X_predict:
+            y_predicts.append(self.__predict_one(x_predict))
         return y_predicts
-
-    def __predict_many(self,X_predicts):
-        x_fit_indexes = self.x_index
-        x_predict_indexes = np.arange(-X_predicts.shape[0],0,1)
-        indexes = list(x_fit_indexes) + list(x_predict_indexes)
-
-        uniun_fits_predicts = list(self.X) + list(X_predicts)
-        ones = np.ones(self.X.shape[1])
-        sizes = list(map( lambda x: self.metrics(x,ones),uniun_fits_predicts))
-
-        tuple_ind_size = list(zip(indexes, sizes))
-        tuple_ind_size_sorted = sorted(tuple_ind_size,key=lambda x:x[1])
-
-        indexes = [i for i,_ in tuple_ind_size_sorted]
-        sizes = [i for _,i in tuple_ind_size_sorted]
-
-        y_preds = []
-
-        for x_predict_index in x_predict_indexes:
-            ind_pred = indexes.index(x_predict_index)
-            voice_n_neigh = []
-            n = 0
-            for ind_fit in indexes[self.n_neighbors//2-ind_pred:]:
-                if ind_fit < 0:
-                    continue
-                n+=1
-                if n>self.n_neighbors:
-                    break
-                voice_n_neigh.append(self.y[ind_fit])
-            y_predict = Counter(voice_n_neigh).most_common()[0][0]
-            y_preds.append(y_predict)
-        return  y_preds
 
 
 
@@ -84,7 +52,7 @@ class KNNClassificator:
 if __name__ == "__main__":
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import  accuracy_score
-    name = '../test_data.csv'
+    name = '../data/test_data.csv'
     data = pd.read_csv(name)
     data = data.astype(float)
 
@@ -96,4 +64,3 @@ if __name__ == "__main__":
     y_pred = knn.predict(X_test)
     acc = accuracy_score(y_test,y_pred)
     print(f"accuracy = {acc}")
-    knn

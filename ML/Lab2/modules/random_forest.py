@@ -1,28 +1,26 @@
 import numpy as np
 from decision_tree import  DecisionTree
 from collections import  Counter
-
+import math
 class RandomForest:
-    def __init__(self,n_estimators=10, max_depth=7,min_size=3):
+    def __init__(self,n_estimators=10,samples = None, max_depth=7,min_size=3):
         self.n_estimators = n_estimators
         self.max_depth = max_depth
         self.min_size = min_size
-
+        self.samples = samples
     def fit(self,X,y):
         self.decision_trees = []
 
         for _ in range(self.n_estimators):
-            ind_row = np.random.choice(X.shape[0],1000)
-            if X.shape[1]>3:
-                ind_col = np.random.choice(X.shape[1],X.shape[1]//3,replace = False)
-            else:
-                ind_col = np.random.choice(X.shape[1], X.shape[1], replace=False)
+
+            ind_row = np.random.choice(X.shape[0],X.shape[0]) if self.samples == None else np.random.choice(X.shape[0],self.samles)
+            ind_col = np.random.choice(X.shape[1],int(math.sqrt(X.shape[1])),replace = False)
             X_est = X[ind_row]
-            X_est = X[ind_col]
+            X_est = X_est[:,ind_col]
 
             y_est = y[ind_row]
             dt = DecisionTree(max_depth=self.max_depth, min_size=self.min_size)
-            dt.fit(X,y)
+            dt.fit(X_est,y_est)
             self.decision_trees.append(dt)
     def predict(self,X):
         result = None
@@ -58,6 +56,6 @@ if __name__ == '__main__':
                         [6.642287351, 3.319983761, 1]])
     X = dataset[:,:-1]
     y = dataset[:,-1]
-    rf = RandomForest(n_estimators=3)
+    rf = RandomForest(n_estimators=10000)
     rf.fit(X,y)
     print(rf.predict(X))

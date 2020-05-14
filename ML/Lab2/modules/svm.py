@@ -51,7 +51,7 @@ if __name__ =='__main__':
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import accuracy_score
 
-    data = np.genfromtxt('../test_svm.csv', dtype=float, delimiter=',')
+    data = np.genfromtxt('../data/test_svm.csv', dtype=float, delimiter=',')
     np.random.shuffle(data)
 
     train_y = data[:, 0]

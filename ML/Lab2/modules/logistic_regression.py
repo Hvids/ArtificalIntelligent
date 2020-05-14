@@ -65,7 +65,7 @@ def accuracy(y,y_pred):
 if __name__ == '__main__':
     import pandas as pd
 
-    name = '../test_data.csv'
+    name = '../data/test_data.csv'
     data = pd.read_csv(name)
     data = data.astype(float)
 
